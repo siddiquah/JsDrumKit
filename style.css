@@ -12,7 +12,7 @@ html {
   
   .keys {
     display: flex;
-    flex: 1;
+    flex-direction: row;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
@@ -48,4 +48,9 @@ html {
     text-transform: uppercase;
     letter-spacing: .1rem;
     color: #ffc600;
+  }
+  @media (max-width: 800px) {
+    .keys {
+      flex-direction: column;
+    }
   }
